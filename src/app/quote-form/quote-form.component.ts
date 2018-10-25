@@ -12,7 +12,7 @@ export class QuoteFormComponent implements OnInit {
   submitQuote(){
     this.addQuote.emit(this.newQuote);
     console.log("Added successfully");
-    // this.newQuote = new Quote()(0,"","","",0);
+    this.newQuote = new Quote()(0,"","","",0);
   }
   // newQuote= new Quote(params)
   constructor() { }
